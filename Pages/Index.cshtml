@@ -1,4 +1,4 @@
-﻿@page
+﻿@page "{shortUrl?}"
 @model IndexModel
 @{
     ViewData["Title"] = "Shorten URL";
@@ -10,13 +10,13 @@
     <form method="post" class="shorten-form">
         <label>
             URL:
-            <input type="text" asp-for=@Model.OriginalUrl />
+            <input type="text" asp-for="@Model.ShortenedUrl.OriginalUrl"/>
         </label>
         <input type="submit" value="Shorten" class="submit-btn" />
     </form>
  
     <div>
         <p>Short URL:</p>
-        <p>@Model.ShortUrl</p>
+        <p>@Model.FullShortUrl</p>
     </div>
 </div>
