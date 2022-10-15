@@ -1,0 +1,28 @@
+.shorten-form {
+    display: flex;
+    width: 100%;
+    margin-top: 32px;
+    padding-bottom: 16px;
+    align-items: center;
+}
+
+.shorten-form label {
+    display: flex;
+    flex-grow: 1;
+    padding: 8px 0;
+    margin-right: 8px;
+}
+.shorten-form label input {
+    width: 100%;
+    margin-left: 4px;
+}
+
+.submit-btn {
+    background-color: green;
+    border: 0;
+    border-radius: 4px;
+    color: white;
+    padding: 4px 8px;
+    cursor: pointer;
+   
+}

@@ -7,16 +7,16 @@
 <div class="text-center">
     <h1 class="display-4">Shorten URL</h1>
 
-    <form>
+    <form method="post" class="shorten-form">
         <label>
             URL:
-            <input type="text" />
+            <input type="text" asp-for=@Model.OriginalUrl />
         </label>
-        <input type="submit" value="Shorten" />
+        <input type="submit" value="Shorten" class="submit-btn" />
     </form>
-
+ 
     <div>
         <p>Short URL:</p>
-        <p></p>
+        <p>@Model.ShortUrl</p>
     </div>
 </div>
